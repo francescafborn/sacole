@@ -93,7 +93,7 @@ public class ControladorSacole {
             
             //definindo o conteúdo da tabela
             linha.add(objeto.getSabor());
-            linha.add(objeto.getData_de_validade());
+            linha.add(objeto.getData_de_validade().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
             linha.add(objeto.getPreco());
             linha.add(objeto.getN_de_serie());
             linha.add(objeto.getCodigo());
